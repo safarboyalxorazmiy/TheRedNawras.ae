@@ -22,3 +22,195 @@ body {
 h1, h2, h3, h4, h5, h6, button, a, p {
   font-family: "Plus Jakarta Sans", serif!important;
 }
+
+nav .btn-primary {
+  background-color: #D10F00;
+  color: white;
+  font-weight: bold;
+  font-size: 36px;
+  height: 88px;
+  padding: 0 38px;
+  border-radius: 12px;
+  transition: all 0.5s ease;
+}
+
+nav .btn-primary:hover {
+  background-color: #300300;
+}
+
+nav ul li a {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  column-gap: 32px;
+}
+
+nav {
+  display: flex;
+  height: 250px;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 74px;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.clear .back-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 1360px) {
+  nav ul li a {
+    font-size: 28px!important;
+  }
+  
+  nav .btn-primary {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+  nav ul li a {
+    font-size: 24px!important;
+  }
+  
+  nav .btn-primary {
+    font-size: 28px;
+  }
+}
+
+
+@media only screen and (max-width: 1160px) {
+  nav ul li a {
+    font-size: 20px!important;
+  }
+  
+  nav .btn-primary {
+    height: 77px;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  nav ul li a {
+    font-size: 18px!important;
+  }
+  
+  nav .btn-primary {
+    height: 67px;
+    font-size: 24px;
+  }
+
+  nav a img {
+    height: 150px;
+  }
+}
+
+
+@media only screen and (max-width: 960px) {
+  nav ul li a {
+    font-size: 16px!important;
+  }
+  
+  nav .btn-primary {
+    height: 57px;
+    font-size: 18px;
+    border-radius: 8px;
+  }
+
+  nav a img {
+    height: 100px;
+  }
+
+  nav {
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  nav {
+    display: flex;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav ul.open {
+    display: flex!important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    row-gap: 12px;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li a {
+    font-size: 48px!important;
+  }
+
+  nav .btn-primary {
+    display: none;
+  }
+
+  nav .btn-primary.open {
+    display: block!important;
+    position: absolute;
+    bottom: 80px;
+    width: 80%;
+    left: 10%;
+    font-size: 32px;
+    height: 88px;
+  }
+
+  .menu-icon {
+    display: block!important;
+  }
+
+  .clear.open {
+    background-color: #FFF;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .clear.open .back-icon {
+    left: 60px;
+    position: absolute;
+    top: 60px;
+    transform: rotate(180deg);
+    cursor: pointer;
+  }
+
+  .clear.open .back-icon {
+    display: block!important;
+  }
+  
+}
+
+@media only screen and (max-width: 460px) {
+  
+  nav .btn-primary {
+    position: absolute;
+    bottom: 80px;
+    width: 80%;
+    left: 10%;
+    font-size: 24px;
+    height: 68px;
+  }
+}
