@@ -1,15 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import logo from '../images/logo.svg';
 import menuIcon from '../images/menu-icon.svg';
 import backIcon from '../images/back-icon.svg';
 import playIcon from '../images/play-icon.svg';
+import playIconHovered from '../images/play-icon-hovered.svg';
 import vehicle1 from '../images/vehicle-1.png';
 import vehicle2 from '../images/vehicle-2.png';
 import vehicle3 from '../images/vehicle-3.png';
 import vehicle4 from '../images/vehicle-4.png';
 
 const Dashboard: React.FC = () => {
-  const [menuOpened, setMenuOpened] = React.useState(false); 
+  const [menuOpened, setMenuOpened] = useState(false); 
+  const [imgSrc, setImgSrc] = useState(playIcon); 
 
   return (
     <div>
@@ -57,8 +59,10 @@ const Dashboard: React.FC = () => {
           <h1>Based in Abu Dhabi. </h1>
           <h2>Providing service all over UAE. </h2>
 
-          <button className="btn btn-outline-primary">
-            <img src={playIcon} alt="" />
+          <button className="btn btn-outline-primary"  
+          onMouseOver={() => setImgSrc(playIconHovered)} 
+          onMouseOut={() => setImgSrc(playIcon)}>
+            <img src={imgSrc} alt="" />
             Explore more
           </button>
         </main>
@@ -91,6 +95,92 @@ const Dashboard: React.FC = () => {
           </div>
         </div>
 
+      </section>
+
+      <section id="packages">
+        <h1 className="title">Packages</h1>
+
+        <div className="package">
+          <div className="cities">
+            <ul>
+              <li>Al Reef City</li>
+              <li>Al Raha & Gardens</li>
+            </ul>
+            <ul>
+              <li>Khalifa City</li>
+              <li>Masdar City</li>
+            </ul>
+          </div>
+
+          <div className="package-content">
+            <h4>400 AED <span>/ month</span></h4>
+            <p>For duty use only</p>
+            <button>Join</button>
+          </div>
+        </div>
+
+        <div className="package">
+          <div className="cities">
+            <ul>
+              <li>Shakhbout City</li>
+            </ul>
+          </div>
+
+          <div className="package-content">
+            <h4>550 AED <span>/ month</span></h4>
+            <p>For duty use only</p>
+            <button>Join</button>
+          </div>
+        </div>
+
+        <div className="package">
+          <div className="cities">
+            <ul>
+              <li>Shahama</li>
+              <li>Yas Island</li>
+            </ul>
+            <ul>
+              <li>Shamha City</li>
+              <li>Shuwameh City</li>
+            </ul>
+          </div>
+
+          <div className="package-content">
+            <h4>650 AED <span>/ month</span></h4>
+            <p>For duty use only</p>
+            <button>Join</button>
+          </div>
+        </div>
+
+        <div className="package">
+          <div className="cities">
+            <ul>
+              <li>Riyadh City</li>
+              <li>Rabdan area</li>
+            </ul>
+          </div>
+
+          <div className="package-content">
+            <h4>700 AED <span>/ month</span></h4>
+            <p>For duty use only</p>
+            <button>Join</button>
+          </div>
+        </div>
+
+        <div className="package">
+          <div className="cities">
+            <ul>
+              <li>Muror</li>
+              <li>Rotana Hotel</li>
+            </ul>
+          </div>
+
+          <div className="package-content">
+            <h4>800 AED <span>/ month</span></h4>
+            <p>For duty use only</p>
+            <button>Join</button>
+          </div>
+        </div>
       </section>
     </div>
   );

@@ -289,10 +289,14 @@ main h2 {
   color: #D10F00;
 }
 
-#service h1.title {
+h1.title {
   color: #5C5D5F;
   font-size: 140px;
   font-weight: 700;
+  width: 100%;
+}
+
+#service h1.title {
   text-align: center;
 }
 
@@ -308,4 +312,72 @@ main h2 {
 
 #service .vehicles .vehicle {
   width: calc((100% / 4) - (30px * 3));
+}
+
+#packages {
+  margin-top: 148px;
+  padding: 0px 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#packages .package {
+  display: flex;
+  width: 100%;
+}
+
+#packages .package .cities {
+  width: 50%;
+  display: flex;
+  padding: 33px 40px;
+  column-gap: 30px;
+  border-right: 3px solid #191919;
+  align-items: center;
+}
+
+#packages .package .package-content {
+  padding: 72px 61px 43px 87px;
+}
+
+#packages .package .cities ul li {
+  font-size: 32px;
+}
+
+#packages .package .package-content {
+  width: 50%;
+}
+
+#packages .package .package-content button {
+  width: 539px;
+  height: 80px;
+  background-color: #D10F00;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#packages .package .package-content h4 {
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 23px;
+}
+
+#packages .package .package-content h4 span {
+  color: #000;
+  opacity: 0.7;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+#packages .package .package-content p {
+  color: #000;
+  opacity: 0.7;
+  font-weight: normal;
+  font-size: 24px;
+  margin-bottom: 26px;
+}
+
+.package {
+  margin-top: 79px;
 }
