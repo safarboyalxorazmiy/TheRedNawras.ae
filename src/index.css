@@ -31,11 +31,12 @@ nav .btn-primary {
   height: 88px;
   padding: 0 38px;
   border-radius: 12px;
-  transition: all 0.5s ease;
+  transition: all 0.4s ease-in-out;
 }
 
 nav .btn-primary:hover {
   background-color: #300300;
+  transform: scale(1.1);
 }
 
 nav ul li a {
@@ -213,4 +214,98 @@ nav {
     font-size: 24px;
     height: 68px;
   }
+}
+
+main {
+  max-width: 1170px;
+  margin: auto;
+  position: relative;
+  height: 442px;
+}
+
+main h3 {
+  margin-top: 63px;
+  font-size: 58px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 14px;
+  max-width: 1170px;
+  margin: auto;
+}
+
+main h1 {
+  font-size: 84px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+  max-width: 1170px;
+  margin: auto;
+}
+
+main h2 {
+  font-size: 68px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 1170px;
+  margin: auto;
+}
+
+.btn-outline-primary {
+  position: absolute;
+  border-radius: 54px;
+  border: 2px solid #FF0000;
+  width: 394px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #FF0000;
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 88px;
+  right: 20%;
+  bottom: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-outline-primary:hover {
+  background-color: #FF0000;
+  color: white;
+  transform: scale(1.1);
+}
+
+#service {
+  padding: 0px 60px;
+}
+
+#service h2 {
+  margin-top: 54px;
+  font-size: 53px;
+  max-width: 1221px;
+}
+
+#service h2 strong {
+  color: #D10F00;
+}
+
+#service h1.title {
+  color: #5C5D5F;
+  font-size: 140px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#service .vehicles {
+  margin-top: -80px;
+  z-index: 999;
+  position: relative;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  column-gap: 30px;
+}
+
+#service .vehicles .vehicle {
+  width: calc((100% / 4) - (30px * 3));
 }
