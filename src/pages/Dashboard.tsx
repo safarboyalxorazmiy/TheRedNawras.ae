@@ -8,6 +8,9 @@ import vehicle1 from '../images/vehicle-1.png';
 import vehicle2 from '../images/vehicle-2.png';
 import vehicle3 from '../images/vehicle-3.png';
 import vehicle4 from '../images/vehicle-4.png';
+import map from '../images/map.png';
+import instagram from '../images/instagram-icon.svg';
+import whatsapp from '../images/whatsapp-icon.svg';
 
 const Dashboard: React.FC = () => {
   const [menuOpened, setMenuOpened] = useState(false); 
@@ -182,6 +185,29 @@ const Dashboard: React.FC = () => {
           </div>
         </div>
       </section>
+
+      <section id="contact">
+        <div className="contact-content">
+          <h1 className="title">Contacts</h1>
+          <h2>+971 50 4473294</h2>
+          <h2>+971 50 2911488</h2>
+
+          <div className="socials">
+            <img src={instagram} alt="" />
+            <img src={whatsapp} alt="" />
+          </div>
+        </div>
+        <div className="contact-map">
+          <img src={map} alt="" />
+          <p>Abu Dhabi, Mussafah city M38-40, Area 9,Bulding 1-4, Office 5.</p>
+        </div>
+      </section>
+
+      <footer>
+        <p>© 2025 The Red Nawras. All Rights Reserved.</p>
+
+        <a href="mailto:nawrasred@gmail.com">nawrasred@gmail.com</a>
+      </footer>
     </div>
   );
 };
