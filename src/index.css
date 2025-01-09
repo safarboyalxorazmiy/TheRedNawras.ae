@@ -152,6 +152,7 @@ nav {
     width: 100%;
     top: 20%;
     row-gap: 12px;
+    z-index: 2;
   }
 
   nav ul li {
@@ -175,6 +176,7 @@ nav {
     left: 10%;
     font-size: 32px;
     height: 88px;
+    z-index: 2;
   }
 
   .menu-icon {
@@ -201,6 +203,12 @@ nav {
   .clear.open .back-icon {
     display: block!important;
   }
+
+  .clear {
+    z-index: 1;
+  }
+
+
   
 }
 
@@ -438,4 +446,234 @@ footer * {
   color: #000;
   font-weight: bold;
 }
+
+@media only screen and (max-width: 1010px) {
+  
+  main {
+    max-width: 1170px;
+    margin: auto;
+    position: relative;
+    height: 382px;
+  }
+
+  main h3 {
+    margin-top: 63px;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 14px;
+    max-width: 1170px;
+    margin: auto;
+  }
+
+  main h1 {
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+    max-width: 1170px;
+    margin: auto;
+  }
+
+  main h2 {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+    max-width: 1170px;
+    margin: auto;
+  }
+
+  .vehicles {
+    /* height: 1000px; */
+    flex-direction: column!important;
+  }
+
+  .vehicle {
+    width: 100%!important;
+  }
+
+  #packages {
+    width: 100%;
+  }
+  #packages .package {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #packages .package .cities {
+    width: 100%;
+    display: flex;
+    padding: 33px 40px;
+    column-gap: 30px;
+    border-right: none;
+    border-bottom: 3px solid #191919;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  #packages .package .package-content {
+    width: 100%;
+  }
+
+  #packages .package .cities ul {
+    flex-direction: column;
+  }
+
+  #packages .package .cities {
+    flex-direction: column;
+  }
+
+  #packages .package {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #contact {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  #contact .contact-content {
+    padding-left: 0px!important;
+  }
+
+  footer {
+    flex-direction: column;
+    row-gap: 0!important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer * {
+    font-size: 24px;
+    color: #000;
+    font-weight: bold;
+  }
+}
+
+
+@media only screen and (max-width: 850px) {
+  
+  main {
+    max-width: 1170px;
+    margin: auto;
+    position: relative;
+    height: 282px;
+  }
+
+  main h3 {
+    margin-top: 63px;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 14px;
+    max-width: 1170px;
+    margin: auto;
+  }
+
+  main h1 {
+    font-size: 44px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+    max-width: 1170px;
+    margin: auto;
+  }
+
+  main h2 {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+    max-width: 1170px;
+    margin: auto;
+  }
+
+  h1.title {
+    font-size: 50px!important;
+  }
+  
+  #service .title  {
+    margin-top: 100px;
+  }
+  
+  #service .vehicles {
+    margin-top: -30px;
+  }
+
+  #packages .package .package-content button {
+    width: 100%;
+  }
+
+  #packages .package .package-content {
+    padding: 12px 11px 13px 17px;
+  }
+  
+  section#contact .contact-map {
+    width: 80%;
+  }
+  
+  section#contact .contact-content {
+    margin-top: 10px;
+    width: 80%;
+  }
+
+  section#contact h2 {
+    font-size: 43px;
+    font-weight: 900;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .btn-outline-primary {
+    width: 294px;
+    font-size: 26px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  main {
+    max-width: 1170px;
+    margin: auto;
+    position: relative;
+    height: 242px;
+  }
+
+  main h3 {
+    margin-top: 63px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 14px;
+    max-width: 1170px;
+    margin: auto;
+  }
+
+  main h1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+    max-width: 1170px;
+    margin: auto;
+  }
+
+  main h2 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+    max-width: 1170px;
+    margin: auto;
+  }
+
+  #service h2 {
+    font-size: 33px;
+  }
+}
+
 
